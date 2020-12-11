@@ -74,7 +74,13 @@
           <h1 class="hero-title">
             ЭФФЕКТЫВНИЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <a href="" class="link hero-btn">Заказать услугу</a>
+          <button class="hero-btn" data-modal-open>Заказать услугу</button>
+        <div class="popup-bg">
+  <div class="popup">
+    <img class="close-popup" src="images/close.png" alt="">
+
+  </div>
+</div>
         </div>
       </section>
 
@@ -351,6 +357,7 @@
           </ul>
         </div>
       </section>
+      <!-- Наши кленты -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -450,5 +457,15 @@
         </div>
       </div>
     </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-btn" type="button" data-modal-close>
+        <svg hight="18" width="18" class="svg-close">
+          <use href="./Img/sprite.svg#closed"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>  
   </body>
 </html>
